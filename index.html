@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form - HTML </HTML></h1>
+    <form action="cadastro" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="idnome">Nome</label>
+            <input type="text" name="nome" id="idnome" required autocomplete=""><br>
+            <label for="idsenha">Senha</label>
+            <input type="text" name="Senha" id="idsenha">
+        </fieldset>
+        <fieldset>
+            <legend>Pagamento</legend>
+            <input type="radio" name="Pagamento" id="idcredito" value="credito" required autocomplete>
+            <label for="idcrédito">Crédito</label>
+            <input type="radio" name="Pagamento" id="iddebito" value="deb" required autocomplete>
+            <label for="iddebito">Débito</label>
+            <input type="radio" name="Pagamento" id="idpix" value="pix" required autocomplete>
+            <label for="idpix">Pix</label>
+        </fieldset>
+        <fieldset>
+            <legend>Cursos</legend required autocomplete>
+            <input type="Checkbox" name="curso" id="idhtml" value="html" >
+            <label for="idhtml">HTML5</label>
+            <input type="Checkbox" name="curso" id="idcss" value="css">
+            <label for="idcss">CSS3</label>
+            <input type="Checkbox" name="curso" id="idjs" value="JS">
+            <label for="idjs">Java Script</label>
+        </fieldset>
+        <fieldset>
+            <legend>Local da Prova</legend>
+            <label for="idestado">Estado</label>
+            <select name="Estado" id="idestado">
+                <option value=""disable selected>Selecione um Estado</option>
+                <optgroup label=Sudeste >
+                   <option value="SP">São Paulo</option>
+                   <option value="RJ">Rio de Janeiro</option>
+                   <option value="MG">Minas Gerais</option>
+                   <option value="ES">Espirito Santo</option>
+                </optgroup label=Sul>
+                   <option value="RS">Rio Grande so Sul</option>
+                   <option value="PR">Parana</option>
+                <optgroup>
+
+                </optgroup>
+            </select>
+
+        </fieldset>
+        <fieldset>
+            <legend>Observações</legend>
+            <textarea name="obs" id="idobs" cols="100" rows="5"></textarea>
+        </fieldset>
+        <input type="submit" value="cadastrar">
+        <input type="reset" value="limpar">
+        <input type="button" value="mudar">
+        <input type="file" name="iddoc" id="iddoc">
+    </form>
+</body>
+</html>
